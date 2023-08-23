@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 962.26074, g: 1089.9229, b: 1274.4011, a: 1}
+  m_IndirectSpecularColor: {r: 962.2544, g: 1089.9336, b: 1274.4358, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4703,7 +4703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CameraSensor:
     rid: 4100188228869947408
-  m_Labelers: []
+  m_Labelers:
+  - rid: 4100188233137389576
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4727,6 +4728,14 @@ MonoBehaviour:
         asm: Unity.Perception.Runtime}
       data:
         superSamplingFactor: 1
+    - rid: 4100188233137389576
+      type: {class: BoundingBox2DLabeler, ns: UnityEngine.Perception.GroundTruth.Labelers,
+        asm: Unity.Perception.Runtime}
+      data:
+        enabled: 1
+        annotationId: bounding box
+        idLabelConfig: {fileID: 11400000, guid: d096549754a5e7345ae15d0f7b6c332b,
+          type: 2}
 --- !u!1 &1869031958
 GameObject:
   m_ObjectHideFlags: 3
