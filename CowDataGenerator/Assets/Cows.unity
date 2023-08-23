@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 962.2544, g: 1089.9336, b: 1274.4358, a: 1}
+  m_IndirectSpecularColor: {r: 962.21936, g: 1089.9617, b: 1274.4954, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3595,6 +3595,7 @@ MonoBehaviour:
   - rid: 4100188228869947402
   - rid: 4100188228869947407
   - rid: 4100188233137389568
+  - rid: 4100188233137389577
   configuration: {fileID: 0}
   constants:
     randomSeed: 539662031
@@ -3822,6 +3823,13 @@ MonoBehaviour:
           - {fileID: 2800000, guid: 590c1416b8ba51640be457d9e7377dac, type: 3}
     - rid: 4100188233137389568
       type: {class: LightRandomizer, ns: UnityEngine.Perception.Randomization.Randomizers,
+        asm: Unity.Perception.Runtime}
+      data:
+        m_Enabled: 1
+        collapsed: 0
+        <enabledStateCanBeSwitchedByUser>k__BackingField: 1
+    - rid: 4100188233137389577
+      type: {class: TransformRandomizer, ns: UnityEngine.Perception.Randomization.Randomizers,
         asm: Unity.Perception.Runtime}
       data:
         m_Enabled: 1
@@ -4557,7 +4565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
   m_LocalRotation: {x: -0, y: -0.9402764, z: -0, w: 0.34041193}
-  m_LocalPosition: {x: 1.82, y: 1, z: 2.43}
+  m_LocalPosition: {x: 3.4, y: 1, z: 4.326}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4902,6 +4910,136 @@ MonoBehaviour:
   - cow
   useAutoLabeling: 0
   autoLabelingSchemeType: 
+--- !u!114 &1886086470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886086462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7961d14205cb64bb3687632c233c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldRandomizePosition: 1
+  positionMode: 1
+  position:
+    collapsed: 0
+    x:
+      rid: 4100188233137389578
+    y:
+      rid: 4100188233137389579
+    z:
+      rid: 4100188233137389580
+  shouldRandomizeRotation: 0
+  rotationMode: 1
+  rotation:
+    collapsed: 0
+    x:
+      rid: 4100188233137389581
+    y:
+      rid: 4100188233137389582
+    z:
+      rid: 4100188233137389583
+  shouldRandomizeScale: 1
+  scaleMode: 1
+  scale:
+    collapsed: 0
+    x:
+      rid: 4100188233137389584
+    y:
+      rid: 4100188233137389585
+    z:
+      rid: 4100188233137389586
+  useUniformScale: 1
+  uniformScale:
+    collapsed: 0
+    value:
+      rid: 4100188233137389587
+  references:
+    version: 2
+    RefIds:
+    - rid: 4100188233137389578
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 1
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389579
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 0
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389580
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 1
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389581
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 0
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389582
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 0
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389583
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 0
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389584
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 5
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389585
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 5
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389586
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 5
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
+    - rid: 4100188233137389587
+      type: {class: ConstantSampler, ns: UnityEngine.Perception.Randomization.Samplers,
+        asm: Unity.Perception.Runtime}
+      data:
+        value: 1
+        <minAllowed>k__BackingField: 0
+        <maxAllowed>k__BackingField: 0
+        <shouldCheckValidRange>k__BackingField: 0
 --- !u!1 &1989371772
 GameObject:
   m_ObjectHideFlags: 0
