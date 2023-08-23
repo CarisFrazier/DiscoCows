@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 962.21936, g: 1089.9617, b: 1274.4954, a: 1}
+  m_IndirectSpecularColor: {r: 962.26953, g: 1090.0193, b: 1274.4814, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3596,6 +3596,7 @@ MonoBehaviour:
   - rid: 4100188228869947407
   - rid: 4100188233137389568
   - rid: 4100188233137389577
+  - rid: 4100188233137389588
   configuration: {fileID: 0}
   constants:
     randomSeed: 539662031
@@ -3835,6 +3836,29 @@ MonoBehaviour:
         m_Enabled: 1
         collapsed: 0
         <enabledStateCanBeSwitchedByUser>k__BackingField: 1
+    - rid: 4100188233137389588
+      type: {class: ForegroundObjectPlacementRandomizer, ns: UnityEngine.Perception.Randomization.Randomizers,
+        asm: Unity.Perception.Runtime}
+      data:
+        m_Enabled: 1
+        collapsed: 0
+        <enabledStateCanBeSwitchedByUser>k__BackingField: 1
+        depth: 3
+        separationDistance: 1
+        placementArea: {x: 7, y: 7}
+        prefabs:
+          collapsed: 0
+          probabilities:
+          - 0.25
+          - 0.25
+          - 0.25
+          - 0.25
+          uniform: 1
+          m_Categories:
+          - {fileID: 5010970073505066177, guid: 523e5acd6055efc4db09ecbe3019f770, type: 3}
+          - {fileID: 6274697944043986484, guid: 8bd7b502217f07441bca1487eb3aab88, type: 3}
+          - {fileID: 7951665812694877579, guid: 667853dd7278e7249976490995d06452, type: 3}
+          - {fileID: 9077790037702174976, guid: 86859ba84f6d8e24884495d9e52dcfde, type: 3}
 --- !u!4 &1197829303
 Transform:
   m_ObjectHideFlags: 0
@@ -4564,14 +4588,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
-  m_LocalRotation: {x: -0, y: -0.9402764, z: -0, w: 0.34041193}
-  m_LocalPosition: {x: 3.4, y: 1, z: 4.326}
+  m_LocalRotation: {x: -0, y: -0.99852306, z: -0, w: -0.054330938}
+  m_LocalPosition: {x: -0.16, y: 1, z: 4.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -140.196, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -186.229, z: 0}
 --- !u!114 &1823688468
 MonoBehaviour:
   m_ObjectHideFlags: 0
